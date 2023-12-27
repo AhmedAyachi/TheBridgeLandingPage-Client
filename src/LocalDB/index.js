@@ -1,4 +1,4 @@
-import {springangularcourse0} from "./Images";
+import {aicourse0,bicourse0,devopscourse0,flutterfirebasecourse0,nodereactcourse0,springangularcourse0} from "./Images";
 
 
 export const courses=[
@@ -9,27 +9,27 @@ export const courses=[
     },
     {
         name:"node JS / react",
-        poster:springangularcourse0,
+        poster:nodereactcourse0,
         price:350,
     },
     {
         name:"flutter / firebase",
-        poster:springangularcourse0,
+        poster:flutterfirebasecourse0,
         price:350,
     },
     {
         name:"business intelligence",
-        poster:springangularcourse0,
+        poster:bicourse0,
         price:350,
     },
     {
         name:"artificial intelligence",
-        poster:springangularcourse0,
+        poster:aicourse0,
         price:350,
     },
     {
         name:"devops",
-        poster:springangularcourse0,
+        poster:devopscourse0,
         price:350,
     },
 ];

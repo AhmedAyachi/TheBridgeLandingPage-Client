@@ -2,9 +2,15 @@
     width:100%;
     height:100%;
     overflow:hidden auto;
+    --paddingHorizontal:3.33em;
 }
 .homeroute>main{
     max-width:100%;
+    padding-top:1.9753em;
+}
+.header{
+    padding-left:var(--paddingHorizontal) !important;
+    padding-right:var(--paddingHorizontal) !important;
 }
 .row0{
     position:relative;
@@ -16,13 +22,13 @@
 }
 .row1{
     max-width:100%;
-    padding:0 3.33em;
+    padding:0 var(--paddingHorizontal);
     padding-top:6.667em;
     padding-bottom:4.12em;
 }
 .facade{
     position:absolute;
-    width:calc(56.296% - 2 * var(--paddingHorizontal));
+    width:calc(56.297% - 2 * var(--paddingHorizontal));
     display:flex;
     flex-direction:column;
     justify-content:flex-start;
@@ -61,8 +67,10 @@
     text-transform:uppercase;
 }
 .facade>button{
-    width:36.67%;
+    width:36.4%;
     margin-top:1.1em;
+    padding-top:1.3em;
+    padding-bottom:1.3em;
     text-transform:uppercase;
 }
 .contactform{
@@ -80,7 +88,7 @@
         font-size:1.4em;
     }
     .facade>button{
-        width:fit-content;
+        width:65%;
     }
     .contactform{
         margin-left:0;

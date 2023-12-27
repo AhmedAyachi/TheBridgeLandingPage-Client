@@ -9,7 +9,7 @@ export default function HomeRoute(){
     const courses=H.useCourses();
     return (
         <div className={css.homeroute}>
-            <HeaderView/>
+            <HeaderView className={css.header}/>
             <main>
                 <div className={css.row0} style={styles.row0}>
                     <div className={css.facade}>
@@ -47,7 +47,7 @@ const statics={
         },
         {
             label:"message",
-            placeholder:"write your message here",
+            placeholder:"Write your message here",
             multiline:true,
         },
     ],
