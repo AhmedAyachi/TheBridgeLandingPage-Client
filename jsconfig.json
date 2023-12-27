@@ -6,7 +6,8 @@
             "Resources":["Resources/index.js"],
             "Assets":["Assets/index.js"],
             "Components":["Components/index.js"],
-            "Routes":["Routes/index.js"]
+            "Routes":["Routes/index.js"],
+            "LocalDB":["LocalDB/index.js"]
         }
         
     },

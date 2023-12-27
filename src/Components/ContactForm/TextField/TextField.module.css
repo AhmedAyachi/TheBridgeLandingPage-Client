@@ -1,0 +1,33 @@
+.textfield{
+    max-width:100%;
+}
+.label{
+    display:inline-block;
+    font-family:var(--mainFont);
+    font-weight:700;
+    font-size:1.25em;
+    text-transform:uppercase;
+    color:var(--textColor);
+    margin-bottom:0.5em;
+}
+.input{
+    font-family:var(--mainFont);
+    font-size:1.5em;
+    width:calc(100% - 2 * var(--paddingHorizontal));
+    padding:0.576em var(--paddingHorizontal);
+    border:none;
+    border-radius:3em;
+    background-color:rgba(255,255,255,0.7);
+    --paddingHorizontal:0.75em;
+}
+textarea.input{
+    min-height:3.3em;
+    border-radius:1.5em;
+    resize:none;
+}
+.input[type=email]::placeholder{
+    text-transform:lowercase;
+}
+input.input::placeholder{
+    text-transform:capitalize;
+}

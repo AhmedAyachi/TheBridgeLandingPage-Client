@@ -1,0 +1,10 @@
+.headerview{
+    max-width:100%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    padding:2.963em 1.33em;
+}
+.appicon{
+    width:15em;
+}

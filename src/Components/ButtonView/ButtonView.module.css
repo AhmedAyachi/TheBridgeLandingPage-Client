@@ -1,0 +1,43 @@
+.buttonview{
+    width:fit-content;
+    font-family:var(--mainFont);
+    font-weight:600;
+    font-size:1em;
+    text-transform:capitalize;
+    padding:1.11em 1.9753em;
+    border:none;
+    border-radius:2.7em;
+    background-color:var(--mainColor);
+    overflow:hidden;
+    transition:200ms;
+}
+.buttonview>label{
+    font-size:1.35em;
+    color:var(--backgroundColor);
+}
+
+@media(any-hover){
+    .buttonview:hover{
+        filter:brightness(0.65);
+        cursor:pointer;
+    }
+    .buttonview>*:hover{
+        cursor:pointer;
+    }
+}
+
+@media(hover:none){
+    .buttonview:active{
+        filter:brightness(0.65);
+        cursor:pointer;
+    }
+    .buttonview>*:active{
+        cursor:pointer;
+    }
+}
+
+@media(max-width:15cm){
+    .buttonview{
+        font-size:0.75em;
+    }
+}

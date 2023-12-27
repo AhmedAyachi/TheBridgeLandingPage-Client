@@ -1,0 +1,35 @@
+.coursegrid{
+    max-width:100%;
+}
+.header{
+    max-width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 3.951em;
+    margin-bottom:6.79em;
+}
+.title{
+    font-family:var(--mainFont);
+    font-weight:600;
+    font-size:3.65em;
+    text-transform:capitalize;
+}
+.courses{
+    max-width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:6.79em 0.987em;
+}
+
+@media(max-width:15cm){
+    .header{
+        padding-left:0;
+        padding-right:0;
+    }
+    .title{
+        font-size:2em;
+    }
+}
