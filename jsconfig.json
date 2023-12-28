@@ -2,7 +2,7 @@
     "compilerOptions":{
         "baseUrl":"./src/",
         "paths":{
-            "Actions":["Store/Actions/index.js"],
+            "Actions":["Store/Actions.js"],
             "Resources":["Resources/index.js"],
             "Assets":["Assets/index.js"],
             "Components":["Components/index.js"],

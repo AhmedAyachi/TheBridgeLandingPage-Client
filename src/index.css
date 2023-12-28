@@ -24,6 +24,11 @@ html,body{
     background-color:var(--backgroundColor);
     overflow:hidden;
 }
+button,.button{
+    font-size:1em;
+    border:none;
+    transition:200ms;
+}
 
 @media(max-width:15cm){
     :root{
@@ -31,4 +36,23 @@ html,body{
     }
 }
 
-[hidden] {display: none !important};
+@media(hover:none){
+    button:active,.button:active{
+        filter:brightness(0.65);
+        opacity:0.85;
+    }
+}
+
+@media(any-hover){
+    button:hover,.button:hover{
+        cursor:pointer;
+        filter:brightness(0.65);
+        opacity:0.85;
+    }
+}
+
+@supports(-webkit-touch-callout: none){
+    *{
+        overscroll-behavior:none;
+    }
+}

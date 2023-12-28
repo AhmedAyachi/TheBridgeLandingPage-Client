@@ -1,0 +1,39 @@
+.alertmodal{
+    max-width:100%;
+}
+.message{
+    font-family:var(--mainFont);
+    font-weight:600;
+    font-size:4em;
+    text-align:center;
+    color:var(--backgroundColor);
+    margin-bottom:1em;
+}
+.message::first-letter{
+    text-transform:uppercase;
+}
+.actions{
+    max-width:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    gap:1.5em;
+}
+.actions>*{
+    width:40% !important;
+    font-size:2em !important;
+}
+
+
+@media(max-width:15cm){
+    .message{
+        font-size:3em;
+    }
+    .actions{
+        flex-direction:column;
+    }
+    .actions>*{
+        width:80% !important;
+        font-size:1.5em !important;
+    }
+}

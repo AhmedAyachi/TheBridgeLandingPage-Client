@@ -1,5 +1,9 @@
 .buttonview{
     width:fit-content;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    column-gap:1em;
     font-family:var(--mainFont);
     font-weight:600;
     font-size:1em;
@@ -16,6 +20,10 @@
     white-space:nowrap;
     color:var(--backgroundColor);
 }
+.buttonview>img{
+    width:2em;
+}
+
 
 @media(any-hover){
     .buttonview:hover{

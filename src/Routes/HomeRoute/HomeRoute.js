@@ -1,17 +1,21 @@
 import React from "react";
 import css from "./HomeRoute.module.css";
-import {ContactForm,CourseGrid,ButtonView,HeaderView} from "Components";
+import {LoadingView,FormView,CourseGrid,ButtonView,HeaderView} from "Components";
 import {workspace0} from "Assets";
+import {useSelector} from "react-redux";
+import {removeItem} from "vritra";
 import * as H from "./Hooks";
 
 
 export default function HomeRoute(){
     const courses=H.useCourses();
+    const isAdmin=useSelector(store=>store.isAdmin);
     return (
         <div className={css.homeroute}>
+            <LoadingView visible={!courses}/>
             <HeaderView className={css.header}/>
             <main>
-                <div className={css.row0} style={styles.row0}>
+                {(!isAdmin)&&<div className={css.row0} style={styles.row0}>
                     <div className={css.facade}>
                         <div/>
                         {[
@@ -20,17 +24,20 @@ export default function HomeRoute(){
                         ].map(text=><span key={text}>{text}</span>)}
                         <ButtonView label="register now"/>
                     </div>
-                </div>
+                </div>}
                 <div className={css.row1}>
                     {courses&&<CourseGrid 
                         courses={courses}
-                        title="discover our courses"
-                        hasMore={true}
+                        title={isAdmin?"available courses":"discover our courses"}
+                        hasMore={!isAdmin}
+                        editable={isAdmin}
                     />}
-                    <ContactForm
+                    {(!isAdmin)&&<FormView
+                        title="contact us"
                         className={css.contactform}
                         fields={statics.contactFields}
-                    />
+                        submitLabel="send the message"
+                    />}
                 </div>
             </main>
         </div>

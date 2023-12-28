@@ -1,6 +1,10 @@
 .courseview{
+    position:relative;
     min-width:28.765em;
     flex:1;
+}
+.courseview[editable]{
+    
 }
 .poster{
     width:100%;
@@ -26,10 +30,32 @@
     margin-left:1.7284em;
     margin-top:0.85em;
 }
+.actions{
+    position:absolute;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    top:1em;
+    right:1em;
+    column-gap:1em;
+}
+.action{
+    background-color:transparent;
+    filter:drop-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+.action>img{
+    width:3em;
+}
 
 @media(max-width:15cm){
     .courseview{
         min-width:100%;
         width:100%;
+    }
+}
+
+@media(any-hover){
+    .courseview[editable]:hover{
+        cursor:pointer;
     }
 }

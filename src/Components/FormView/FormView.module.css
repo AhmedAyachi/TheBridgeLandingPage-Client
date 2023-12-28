@@ -1,4 +1,5 @@
-.contactform{
+.formview{
+    position:relative;
     max-width:100%;
     display:flex;
     flex-direction:column;
@@ -8,6 +9,7 @@
     row-gap:1.23457em;
     border-radius:5em;
     background-color:var(--majorColor);
+    overflow:hidden;
 }
 .title{
     font-family:var(--mainFont);
@@ -32,6 +34,9 @@
 }
 
 @media(max-width:15cm){
+    .title{
+        font-size:2.25em;
+    }
     .fields{
         width:80%;
     }

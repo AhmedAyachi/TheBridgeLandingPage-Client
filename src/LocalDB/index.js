@@ -32,4 +32,7 @@ export const courses=[
         poster:devopscourse0,
         price:350,
     },
-];
+].map((course,i)=>({
+    ...course,
+    id:"course"+i,
+}));

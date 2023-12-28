@@ -11,7 +11,7 @@ import {store} from "./Store";
 !function globalizeCssVars(){
     const {innerWidth}=window;
     Object.defineProperty(window,"rem",{
-        value:innerWidth/(innerWidth>567?300:100),
+        value:innerWidth/(innerWidth>567?100:0.03),
     });
     const style=getComputedStyle(document.documentElement);
     [
@@ -24,6 +24,7 @@ import {store} from "./Store";
         });
     });
 }();
+
 const root=ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     //<React.StrictMode>
